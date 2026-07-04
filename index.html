@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intern Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .project {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+    }
+
+    .name {
+      font-weight: bold;
+      color: #222;
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077cc;
+      font-size: 14px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .project-wrapper {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .project-wrapper:last-child {
+      border-bottom: none;
+    }
+
+    .credentials-section {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-top: 10px;
+      border-left: 4px solid #0077cc;
+      display: none;
+      font-size: 13px;
+    }
+
+    .credentials-section.open {
+      display: block;
+    }
+
+    .credential-item {
+      margin: 10px 0;
+      padding: 8px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+
+    .credential-label {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .credential-url {
+      color: #0077cc;
+      word-break: break-all;
+      margin-bottom: 5px;
+    }
+
+    .credential-info {
+      background-color: #f0f0f0;
+      padding: 5px 8px;
+      border-radius: 3px;
+      margin: 3px 0;
+      font-family: monospace;
+      font-size: 12px;
+    }
+
+    .creds-toggle {
+      cursor: pointer;
+      color: #0077cc;
+      font-size: 12px;
+      margin-left: 10px;
+      text-decoration: underline;
+    }
+
+    .creds-toggle:hover {
+      color: #005fa3;
+    }
+
+    .profile-section {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-top: 10px;
+      border-left: 4px solid #1b9aaa;
+      display: none;
+      font-size: 13px;
+    }
+
+    .profile-section.open {
+      display: block;
+    }
+
+    .profile-item {
+      margin: 10px 0;
+      padding: 8px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+
+    .profile-label {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .profile-info {
+      background-color: #eefbff;
+      padding: 6px 8px;
+      border-radius: 3px;
+      margin: 4px 0;
+      font-size: 12px;
+    }
+
+    .profile-toggle {
+      cursor: pointer;
+      color: #1b9aaa;
+      font-size: 12px;
+      text-decoration: underline;
+    }
+
+    .profile-toggle:hover {
+      color: #127885;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Intern Projects</h1>
+
+    <div class="project-wrapper">
+      <div class="project">
+        <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+          <div class="name"><span><img src="./assets/vishnu.png" height="43" width="43"></span>VishnuPrakash</div>
+          <div style="display: flex; gap: 15px; align-items: center;">
+            <a href="https://github.com/osamarahmani/Expense-Tracker-with-Analytics" target="_blank">View Project</a>
+            <span class="creds-toggle" onclick="toggleCredentials(this, 'vishnu-creds')">Show Credentials</span>
+            <span class="profile-toggle" onclick="toggleProfile(this, 'vishnu-profile')">Show Profile</span>
+          </div>
+        </div>
+      </div>
+      <div class="credentials-section" id="vishnu-creds">
+        <div class="credential-item">
+          <div class="credential-label">Finance Tracker App</div>
+          <div class="credential-url"><a href="https://vp-finance-tracker.vercel.app/" target="_blank">https://vp-finance-tracker.vercel.app/</a></div>
+          
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">Admin Credentials:</div>
+            <div class="credential-info">Email: admin@gmail.com</div>
+            <div class="credential-info">Password: password</div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">User Credentials:</div>
+            <div class="credential-info">User ID: vishnu</div>
+            <div class="credential-info">Password: 1234</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-section" id="vishnu-profile">
+        <div class="profile-item">
+          <div class="profile-label">Intern Profile</div>
+          <div class="profile-info">Intern Name: Vishnu Prakash P</div>
+          <div class="profile-info">College Name: Thiagarajar College</div>
+          <div class="profile-info">Dept: Computer Science</div>
+          <div class="profile-info">Year: III</div>
+          <div class="profile-info">Sem: VI</div>
+          <div class="profile-info">Mail: vishnuprakash30805@gmail.com</div>
+          <div class="profile-info">Number: 9444630554</div>
+          <div class="profile-info">DOJ (Date of Joining): 09/03/2026</div>
+        </div>
+      </div>
+    </div-wrapper>
+
+    <div class="project-wrapper">
+      <div class="project">
+        <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+          <div class="name"><span><img src="./assets/karthik.png" alt="" height="43" width="43"></span> Karthick</div>
+          <div style="display: flex; gap: 15px; align-items: center;">
+            <a href="https://github.com/osamarahmani/.-Mini-LMS-Course-Progress-Tracking-" target="_blank">View Project</a>
+            <span class="creds-toggle" onclick="toggleCredentials(this, 'karthick-creds')">Show Credentials</span>
+            <span class="profile-toggle" onclick="toggleProfile(this, 'karthick-profile')">Show Profile</span>
+          </div>
+        </div>
+      </div>
+      <div class="credentials-section" id="karthick-creds">
+        <div class="credential-item">
+          <div class="credential-label">Mini LMS - Course Progress Tracking</div>
+          <div class="credential-url"><a href="https://mini-lms-course-progress-tracking.vercel.app/" target="_blank">https://mini-lms-course-progress-tracking.vercel.app/</a></div>
+          
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">Admin Credentials:</div>
+            <div class="credential-info">Email: admin@gmail.com</div>
+            <div class="credential-info">Password: admin123</div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">User Credentials:</div>
+            <div class="credential-info">Email: karthickraja5753@gmail.com</div>
+            <div class="credential-info">Password: 789</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-section" id="karthick-profile">
+        <div class="profile-item">
+          <div class="profile-label">Intern Profile</div>
+          <div class="profile-info">Intern Name: Karthick Raja S</div>
+          <div class="profile-info">College Name: Thiagarajar College</div>
+          <div class="profile-info">Dept: Computer Science</div>
+          <div class="profile-info">Year: III</div>
+          <div class="profile-info">Sem: VI</div>
+          <div class="profile-info">Mail: karthickraja5753@gmail.com</div>
+          <div class="profile-info">Number: 7411157053</div>
+          <div class="profile-info">DOJ (Date of Joining): 09/03/2026</div>
+        </div>
+      </div>
+    </div-wrapper>
+
+    <div class="project-wrapper">
+      <div class="project">
+        <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+          <div class="name"><span><img src="./assets/Srisam.png" alt="" height="43" width="43"></span> Srisam-Raagosh</div>
+          <div style="display: flex; gap: 15px; align-items: center;">
+            <a href="https://github.com/osamarahmani/.-Booking-System-Slots-Management-" target="_blank">View Project</a>
+            <span class="creds-toggle" onclick="toggleCredentials(this, 'srisam-creds')">Show Credentials</span>
+            <span class="profile-toggle" onclick="toggleProfile(this, 'srisam-profile')">Show Profile</span>
+          </div>
+        </div>
+      </div>
+      <div class="credentials-section" id="srisam-creds">
+        <div class="credential-item">
+          <div class="credential-label">Booking System - Slots Management</div>
+          <div class="credential-url" style="color: #999; margin: 10px 0;">App URL: <span style="font-style: italic;">To be added</span></div>
+          
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">Admin Credentials:</div>
+            <div class="credential-info">Email: <span style="color: #999;">To be added</span></div>
+            <div class="credential-info">Password: <span style="color: #999;">To be added</span></div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">User Credentials:</div>
+            <div class="credential-info">User ID: <span style="color: #999;">To be added</span></div>
+            <div class="credential-info">Password: <span style="color: #999;">To be added</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-section" id="srisam-profile">
+        <div class="profile-item">
+          <div class="profile-label">Intern Profile</div>
+          <div class="profile-info">Intern Name: Srisam Raagosh</div>
+          <div class="profile-info">College Name: Thiagarajar College</div>
+          <div class="profile-info">Dept: Computer Science</div>
+          <div class="profile-info">Year: III</div>
+          <div class="profile-info">Sem: VI</div>
+          <div class="profile-info">Mail: raagoshsrisam@gmail.com</div>
+          <div class="profile-info">Number: 9489386904</div>
+          <div class="profile-info">DOJ (Date of Joining): 09/03/2026</div>
+        </div>
+      </div>
+    </div-wrapper>
+
+    <div class="project-wrapper">
+      <div class="project">
+        <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+          <div class="name"><span><img src="./assets/Lakshitha.png" alt="" height="43" width="43"></span> Lakshithadevi</div>
+          <div style="display: flex; gap: 15px; align-items: center;">
+            <a href="https://github.com/osamarahmani/Feedback-Issue-Tracking-System" target="_blank">View Project</a>
+            <span class="creds-toggle" onclick="toggleCredentials(this, 'lakshitha-creds')">Show Credentials</span>
+            <span class="profile-toggle" onclick="toggleProfile(this, 'lakshitha-profile')">Show Profile</span>
+          </div>
+        </div>
+      </div>
+      <div class="credentials-section" id="lakshitha-creds">
+        <div class="credential-item">
+          <div class="credential-label">Feedback - Issue Tracking System</div>
+          <div class="credential-url"><a href="https://feedback-issue-tracking-system.vercel.app/" target="_blank">https://feedback-issue-tracking-system.vercel.app/</a></div>
+          
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">Admin Credentials:</div>
+            <div class="credential-info">Email: admin@gmail.com</div>
+            <div class="credential-info">Password: admin123</div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">User Credentials:</div>
+            <div class="credential-info">Email: karthick@gmail.com</div>
+            <div class="credential-info">Password: 123</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-section" id="lakshitha-profile">
+        <div class="profile-item">
+          <div class="profile-label">Intern Profile</div>
+          <div class="profile-info">Intern Name: Lakshitha Devi S</div>
+          <div class="profile-info">College Name: Thiagarajar College</div>
+          <div class="profile-info">Dept: Computer Science</div>
+          <div class="profile-info">Year: III</div>
+          <div class="profile-info">Sem: VI</div>
+          <div class="profile-info">Mail: lakshithadevi3103@gmail.com</div>
+          <div class="profile-info">Number: 9688722531</div>
+          <div class="profile-info">DOJ (Date of Joining): 09/03/2026</div>
+        </div>
+      </div>
+    </div-wrapper>
+
+    <div class="project-wrapper">
+      <div class="project">
+        <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+          <div class="name"><span>
+            <img src="./assets/Devadharsini.png" alt="" height="43" width="43">
+          </span>Devadharsini-G</div>
+          <div style="display: flex; gap: 15px; align-items: center;">
+            <a href="https://github.com/osamarahmani/Multi-User-Notes-System-with-Sharing-" target="_blank">View Project</a>
+            <span class="creds-toggle" onclick="toggleCredentials(this, 'devadharsini-creds')">Show Credentials</span>
+            <span class="profile-toggle" onclick="toggleProfile(this, 'devadharsini-profile')">Show Profile</span>
+          </div>
+        </div>
+      </div>
+      <div class="credentials-section" id="devadharsini-creds">
+        <div class="credential-item">
+          <div class="credential-label">Multi-User Notes System with Sharing</div>
+          <div class="credential-url"><a href="https://multi-user-notes-system-with-sharin.vercel.app/" target="_blank">https://multi-user-notes-system-with-sharin.vercel.app/</a></div>
+          
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">Admin Credentials:</div>
+            <div class="credential-info">Email: <span style="color: #999;">To be added</span></div>
+            <div class="credential-info">Password: <span style="color: #999;">To be added</span></div>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #0077cc; margin-bottom: 5px;">User Credentials:</div>
+            <div class="credential-info">User 1 ID: deva1</div>
+            <div class="credential-info">Password: 123456</div>
+            <div class="credential-info" style="margin-top: 8px;">User 2 ID: deva2</div>
+            <div class="credential-info">Password: 123456</div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-section" id="devadharsini-profile">
+        <div class="profile-item">
+          <div class="profile-label">Intern Profile</div>
+          <div class="profile-info">Intern Name: Devadharsini G</div>
+          <div class="profile-info">College Name: Thiagarajar College</div>
+          <div class="profile-info">Dept: Computer Science</div>
+          <div class="profile-info">Year: III</div>
+          <div class="profile-info">Sem: VI</div>
+          <div class="profile-info">Mail: devadharshinigurumoorthy@gmail.com</div>
+          <div class="profile-info">Number: 7339194284</div>
+          <div class="profile-info">DOJ (Date of Joining): 09/03/2026</div>
+        </div>
+      </div>
+    </div-wrapper>
+
+  </div>
+</body>
+<script>
+  function toggleCredentials(element, credentialsId) {
+    const credentialsDiv = document.getElementById(credentialsId);
+    credentialsDiv.classList.toggle('open');
+    
+    if (credentialsDiv.classList.contains('open')) {
+      element.textContent = 'Hide Credentials';
+    } else {
+      element.textContent = 'Show Credentials';
+    }
+  }
+
+  function toggleProfile(element, profileId) {
+    const profileDiv = document.getElementById(profileId);
+    profileDiv.classList.toggle('open');
+
+    if (profileDiv.classList.contains('open')) {
+      element.textContent = 'Hide Profile';
+    } else {
+      element.textContent = 'Show Profile';
+    }
+  }
+</script>
+</html>
